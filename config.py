@@ -2,31 +2,31 @@ import os
 import logging
 from logging.handlers import RotatingFileHandler
 
-APP_ID = int(os.environ.get("APP_ID", ""))
-API_HASH = os.environ.get("API_HASH", "")
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
+APP_ID = int(os.environ.get("APP_ID", "20102429"))
+API_HASH = os.environ.get("API_HASH", "0e9e788b4221aafb24c0c2603986333b")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7293654901:AAFVmGrBc4cqLayAseJ10QLHPkHQfXdXDsk")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", ""))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002021154583"))
 
 #OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", ""))
+OWNER_ID = int(os.environ.get("OWNER_ID", "6842904149"))
 
 
 # AUTO DELETE 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
-AUTO_DELETE = int(os.environ.get("AUTO_DELETE", ""))
+AUTO_DELETE = int(os.environ.get("AUTO_DELETE", "300"))
 AUTO_MSG = os.environ.get("AUTO_MSG", "ᴛʜᴇ ғɪʟᴇs ᴡɪʟʟ ʙᴇ ᴅᴇʟᴇᴛᴇᴅ sʜᴏʀᴛʟʏ. ғᴏʀᴡᴀʀᴅɪɴɢ ᴛʜɪs ᴍᴇssᴀɢᴇ ғᴏʀ ʏᴏᴜʀ ʀᴇғᴇʀᴇɴᴄᴇ.")
 
 #Port
 PORT = os.environ.get("PORT", "8080")
 
 #Database 
-DB_URI = os.environ.get("DATABASE_URL", "")
-DB_NAME = os.environ.get("DATABASE_NAME", "filesharexbot")
+DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://thor:7thor7@thor.aymqpdl.mongodb.net/?retryWrites=true&w=majority&appName=thor")
+DB_NAME = os.environ.get("DATABASE_NAME", "HDMEDIA03")
 
 #force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "0"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002202715617"))
 
 
 
@@ -55,7 +55,7 @@ BOT_STATS_TEXT = "<b>BOT UPTIME</b>\n{uptime}"
 USER_REPLY_TEXT = "❌Don't send me messages directly I'm only File Share bot!"
 
 ADMINS.append(OWNER_ID)
-ADMINS.append(1250450587)
+ADMINS.append(6842904149)
 
 LOG_FILE_NAME = "filesharingbot.txt"
 
