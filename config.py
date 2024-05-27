@@ -12,6 +12,11 @@ CHANNEL_ID = int(os.environ.get("CHANNEL_ID", ""))
 #OWNER ID
 OWNER_ID = int(os.environ.get("OWNER_ID", ""))
 
+
+# AUTO DELETE 
+TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
+AUTO_DELETE = int(os.environ.get("AUTO_DELETE", ""))
+
 #Port
 PORT = os.environ.get("PORT", "8080")
 
@@ -22,7 +27,7 @@ DB_NAME = os.environ.get("DATABASE_NAME", "filesharexbot")
 #force sub channel id, if you want enable force sub
 FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "0"))
 
-TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
+
 
 #start message
 START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\nI can store private files in Specified Channel and other users can access it from special link.")
