@@ -14,9 +14,8 @@ OWNER_ID = int(os.environ.get("OWNER_ID", "6842904149"))
 
 
 # AUTO DELETE 
-TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
+TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "10"))
 AUTO_DELETE = int(os.environ.get("AUTO_DELETE", "300"))
-AUTO_MSG = os.environ.get("AUTO_MSG", "ᴛʜᴇ ғɪʟᴇs ᴡɪʟʟ ʙᴇ ᴅᴇʟᴇᴛᴇᴅ sʜᴏʀᴛʟʏ. ғᴏʀᴡᴀʀᴅɪɴɢ ᴛʜɪs ᴍᴇssᴀɢᴇ ғᴏʀ ʏᴏᴜʀ ʀᴇғᴇʀᴇɴᴄᴇ.")
 
 #Port
 PORT = os.environ.get("PORT", "8080")
