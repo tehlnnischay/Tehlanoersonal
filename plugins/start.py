@@ -71,7 +71,7 @@ async def start_command(client: Client, message: Message):
                 sent_message = await msg.copy(chat_id=message.from_user.id, caption=caption, parse_mode=ParseMode.HTML,
                                               reply_markup=reply_markup, protect_content=PROTECT_CONTENT)
                 
-                warning_msg = await message.reply("AUTO_MSG")
+                warning_msg = await message.reply("ᴛʜᴇ ғɪʟᴇs ᴡɪʟʟ ʙᴇ ᴅᴇʟᴇᴛᴇᴅ sʜᴏʀᴛʟʏ. ғᴏʀᴡᴀʀᴅɪɴɢ ᴛʜɪs ᴍᴇssᴀɢᴇ ғᴏʀ ʏᴏᴜʀ ʀᴇғᴇʀᴇɴᴄᴇ.")
                 await asyncio.sleep(AUTO_DELETE)
                 await warning_msg.delete()
                 await sent_message.delete()
@@ -81,7 +81,7 @@ async def start_command(client: Client, message: Message):
                 sent_message = await msg.copy(chat_id=message.from_user.id, caption=caption, parse_mode=ParseMode.HTML,
                                               reply_markup=reply_markup, protect_content=PROTECT_CONTENT)
                 
-                warning_msg = await message.reply("AUTO_MSG")
+                warning_msg = await message.reply("ᴛʜᴇ ғɪʟᴇs ᴡɪʟʟ ʙᴇ ᴅᴇʟᴇᴛᴇᴅ sʜᴏʀᴛʟʏ. ғᴏʀᴡᴀʀᴅɪɴɢ ᴛʜɪs ᴍᴇssᴀɢᴇ ғᴏʀ ʏᴏᴜʀ ʀᴇғᴇʀᴇɴᴄᴇ.")
                 await asyncio.sleep(AUTO_DELETE)
                 await warning_msg.delete()
                 await sent_message.delete()
